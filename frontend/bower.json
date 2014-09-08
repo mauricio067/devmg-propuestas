@@ -1,0 +1,24 @@
+{
+  "name": "devmg-propuestas",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mauricio067/devmg-propuestas",
+  "authors": [
+    "Mauricio <mauricio067@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.23",
+    "angular-resource": "~1.2.23",
+    "angular-route": "~1.2.23",
+    "bootstrap": "~3.2.0"
+  }
+}
