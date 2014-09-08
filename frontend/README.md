@@ -10,7 +10,7 @@ Version
 Requisitos previos
 -----------
 * Instalar el bower
-* Instalar gulp (lo vamos a usar mas adelante)
+* Instalar gulp
 
 
 Instalacion del bower
@@ -29,7 +29,6 @@ npm install -g gulp
 Instalacion de las dependencias
 --------------
 
-Hay que instalar las dependencias de node.js y las dependencias del bower para eso hay que ir a la carpeta /assets/dashboard.
 ### Instalar dependencias de node
 
 ```sh
@@ -40,4 +39,17 @@ npm install
 
 ```sh
 bower install 
+```
+
+### Correr el servidor de para desarrollo
+
+```sh
+gulp
+
+----
+[15:45:28] Using gulpfile D:\mauricio\www\dev
+[15:45:28] Starting 'server'...
+[15:45:28] Server started http://localhost:80
+[15:45:28] LiveReload started on port 35729
+
 ```
