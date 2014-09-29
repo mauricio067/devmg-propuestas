@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<!--
+        Helios by HTML5 UP
+        html5up.net | @n33co
+        Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html ng-app="sitd" ng-controller="MainCtrl" >
+    <head>
+        <title>Devmg - {{ Page.title() }} </title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+        <script src="public/js/jquery.min.js"></script>
+        <script src="public/js/jquery.dropotron.min.js"></script>
+        <script src="public/js/jquery.scrolly.min.js"></script>
+        <script src="public/js/jquery.onvisible.min.js"></script>
+        <script src="public/js/skel.min.js"></script>
+        <script src="public/js/skel-layers.min.js"></script>
+        <script src="public/js/init.js"></script>
+        <link rel="stylesheet" href="public/css/theme/bootstrap.min.css">
+        <noscript>
+        <link rel="stylesheet" href="public/css/skel.css" />
+        <link rel="stylesheet" href="public/css/style.css" />
+        <link rel="stylesheet" href="public/css/style-desktop.css" />
+        <link rel="stylesheet" href="public/css/style-noscript.css" />
+        </noscript>
+         <link rel="stylesheet" href="lib/highlightjs/styles/github.css">
+        <!--[if lte IE 8]><link rel="stylesheet" href="public/css/ie/v8.css" /><![endif]-->
+    </head>
+    <body class="no-sidebar">
+
+        <!-- Header -->
+        <div id="header">
+
+            <!-- Inner -->
+            <div class="inner">
+                <header>
+                    <a href="http://www.devmg.com" id="logo"><img src="public/images/logo_min_blanco.png"/></a>
+                </header>
+            </div>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="http://www.devmg.com">Ir al sitio web</a></li>
+
+                </ul>
+            </nav>
+
+        </div>
+        <div ng-view>
+            
+        </div>
+        <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="lib/angular/angular.js"></script>
+        <script type="text/javascript" src="lib/angular-route/angular-route.js"></script>
+        <script type="text/javascript" src="lib/angular-resource/angular-resource.js"></script>
+        <script type="text/javascript" src="lib/ace-builds/src-min-noconflict/ace.js"></script>
+        <script type="text/javascript" src="lib/angular-ui-ace/ui-ace.js"></script>
+        <script type="text/javascript" src="lib/highlightjs/highlight.pack.js"></script>
+        <script type="text/javascript" src="lib/angular-highlightjs/angular-highlightjs.min.js"></script>
+        <script type="text/javascript" src="lib/marked/lib/marked.js"></script>
+        <script type="text/javascript" src="lib/angular-marked/angular-marked.js"></script>
+        <script type="text/javascript" src="js/textService.js"></script>
+        <script type="text/javascript" src="js/SitdController.js"></script>
+        <script type="text/javascript" src="js/public.js"></script>
+    </body>
+</html>

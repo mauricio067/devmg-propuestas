@@ -1,0 +1,49 @@
+<!-- Main -->
+<div class="wrapper style1">
+
+    <div class="container">
+        <article id="main" class="special">
+
+            <h1>{{sitd.title}}</h1>                                            
+
+            <h3 ng-hide="sitd.type == 'Markdown'" >Type: <span class="label label-primary">{{sitd.type}}</span></h3>
+            <hr>
+            <div ng-show="sitd.type == 'Markdown'" marked="sitd.body"> 
+            </div>
+            <div ng-hide="sitd.type == 'Markdown'" hljs language="{{sitd.type| lowercase }}" source="sitd.body"> 
+            </div>
+
+        </article>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div class="container">
+
+
+        <div class="row">
+            <div class="12u">
+
+                <!-- Contact -->
+                <section class="contact">
+                    <header>
+                        <h3><a href="http://www.devmg.com/#contact">Contactános</a></h3>
+                    </header>
+                    <p>Seguínos en las redes sociales</p>
+                    <ul class="icons">
+                        <li><a href="https://twitter.com/dev_mg" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="https://www.facebook.com/devmgdevelopment" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                        
+                    </ul>
+                </section>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>

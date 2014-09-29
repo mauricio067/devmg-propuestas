@@ -104,8 +104,24 @@
                                 }
                                 );
 	}
+	var SitdPublicController = function($routeParams,$scope,Text,$location,marked,Page){
+		marked.setOptions({gfm: true});
+		Text.get({id: $routeParams.textId}).$promise.then(
+                                //Success
+                                function(data) {
+                                        Page.setTitle(data.title);
+                                	$scope.sitd = data;
+
+                                },
+
+                                function(error) {
+                                	console.log(error);
+                                }
+                                );
+	}
 	
 	angular.module(moduleName).controller('SitdController', ['$scope','Text','$location', SitdController]);
 	angular.module(moduleName).controller('SitdEditController', ['$routeParams','$scope','Text','$location', SitdEditController]);
 	angular.module(moduleName).controller('SitdViewController', ['$routeParams','$scope','Text','$location','marked', SitdViewController]);
+	angular.module(moduleName).controller('SitdPublicController', ['$routeParams','$scope','Text','$location','marked','Page', SitdPublicController]);
 })();
