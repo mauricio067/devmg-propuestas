@@ -10,6 +10,6 @@
 	
 	angular
 	.module(moduleName)
-	.constant('BaseUrl', 'http://localhost:3000')
+	.constant('BaseUrl', 'http://http://devmg-propuestas.devmg.com:3001')
 	.factory('Text', Text);
 })();
