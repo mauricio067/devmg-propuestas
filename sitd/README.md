@@ -41,7 +41,7 @@ npm install
 bower install 
 ```
 
-### Correr el servidor de para desarrollo
+### Correr el servidor de desarrollo
 
 ```sh
 gulp

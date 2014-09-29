@@ -8,3 +8,4 @@ body {
   border-radius: 5px;
   border: 1px solid #ccc;
 }
+.ace_editor { height: 200px; }

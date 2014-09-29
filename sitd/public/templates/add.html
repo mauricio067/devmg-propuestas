@@ -1,0 +1,35 @@
+        <div class="page-header">
+            <h1>Add Simple Text</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form ng-submit="save()" class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Title</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" ng-model="sitd.title" placeholder="Title">
+                    </div>
+                   </div>
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Type</label>
+                    <div class="col-sm-9">
+                       <select  class="form-control" ng-model="sitd.type" ng-options="m for m in modes" ng-change="modeChanged()"></select>
+                    </div>
+                   </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">body</label>
+                <div class="col-sm-9">
+                  <div ui-ace="aceOption" ng-model="sitd.body"></div>
+                </div>
+              </div>
+            <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-9">
+              <button type="submit" class="btn btn-primary">Save</button>
+              <a href="#" class="btn btn-default">Cancel</a>
+            </div>
+             </div>
+            </form>
+</div>
+
+
+</div>

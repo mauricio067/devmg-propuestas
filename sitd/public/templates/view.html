@@ -1,0 +1,14 @@
+
+<div class="page-header">
+    <h1>{{sitd.title}}</h1>
+</div>
+<div class="row">
+    <div class="col-md-12 " >
+        <h3>Type: <span class="label label-primary">{{sitd.type}}</span></h3>
+        <hr>
+        <div ng-show="sitd.type == 'Markdown'" marked="sitd.body"> 
+        </div>
+        <div ng-hide="sitd.type == 'Markdown'" hljs language="{{sitd.type | lowercase }}" source="sitd.body"> 
+        </div>
+    </div>
+</div>

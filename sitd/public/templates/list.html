@@ -1,0 +1,31 @@
+        <div class="page-header">
+            <h1>Simple Texts</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#/add" class="btn btn-primary">Add</a>
+                <hr>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Type</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in sitdList">
+                            <td>{{item.title}}</td>
+                            <td>{{item.type}}</td>
+                            <td>
+                                <a href="#/view/{{item.id}}" class="btn btn-primary">View Text</a>
+                                <a href="#/edit/{{item.id}}" class="btn btn-success">Edit</a>
+                                <a ng-click="delete(item.id)" class="btn btn-danger">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>

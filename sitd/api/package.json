@@ -1,0 +1,26 @@
+{
+  "name": "devmg-propuestas-api",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "gulp": "^3.8.8",
+    "gulp-mocha": "^1.0.0",
+    "gulp-spawn-mocha": "^0.1.7-beta.3",
+    "mocha": "^1.21.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.9.0",
+    "cors": "^2.4.2",
+    "express": "^4.8.8",
+    "mongoose": "^3.8.16",
+    "supertest": "^0.13.0",
+    "winston": "^0.8.0"
+  }
+}
