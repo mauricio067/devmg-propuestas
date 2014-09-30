@@ -23,7 +23,7 @@
 			Text.save({text:$scope.sitd}).$promise.then(
                                 //Success
                                 function(data) {
-                                	$location.path('/');
+                                	$location.path('/my-sitds');
 
                                 },
 
@@ -80,7 +80,7 @@
 			Text.update({id: $routeParams.textId},{text:$scope.sitd}).$promise.then(
                                 //Success
                                 function(data) {
-                                	$location.path('/');
+                                	$location.path('/my-sitds');
 
                                 },
 
