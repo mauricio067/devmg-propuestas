@@ -12,7 +12,7 @@ body {
     height: 400px;
     border: 1px solid #ccc;
     border-radius: 4px;
-
+    
 }
 .markd {
     background-color: #fff;
@@ -33,12 +33,11 @@ body {
     width: 1600px;
 }
 .preview pre{
-    height: 400px; 
+   height: 400px; 
 }
 .row {
     margin-bottom: 22px;
 }
-hr{
-    margin-bottom: 106px;
-    margin-top: -25px;
+.ace_print-margin{
+    left: 0 !important;
 }
